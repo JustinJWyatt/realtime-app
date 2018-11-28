@@ -1,0 +1,14 @@
+/Users/justinwyatt/Github/realtime-app/bin/Debug/netcoreapp2.2/realtime-app.deps.json
+/Users/justinwyatt/Github/realtime-app/bin/Debug/netcoreapp2.2/realtime-app.runtimeconfig.json
+/Users/justinwyatt/Github/realtime-app/bin/Debug/netcoreapp2.2/realtime-app.runtimeconfig.dev.json
+/Users/justinwyatt/Github/realtime-app/bin/Debug/netcoreapp2.2/realtime-app.dll
+/Users/justinwyatt/Github/realtime-app/bin/Debug/netcoreapp2.2/realtime-app.pdb
+/Users/justinwyatt/Github/realtime-app/obj/Debug/netcoreapp2.2/realtime-app.csprojAssemblyReference.cache
+/Users/justinwyatt/Github/realtime-app/obj/Debug/netcoreapp2.2/realtime-app.csproj.CoreCompileInputs.cache
+/Users/justinwyatt/Github/realtime-app/obj/Debug/netcoreapp2.2/realtime-app.RazorAssemblyInfo.cache
+/Users/justinwyatt/Github/realtime-app/obj/Debug/netcoreapp2.2/realtime-app.RazorAssemblyInfo.cs
+/Users/justinwyatt/Github/realtime-app/obj/Debug/netcoreapp2.2/realtime-app.AssemblyInfoInputs.cache
+/Users/justinwyatt/Github/realtime-app/obj/Debug/netcoreapp2.2/realtime-app.AssemblyInfo.cs
+/Users/justinwyatt/Github/realtime-app/obj/Debug/netcoreapp2.2/realtime-app.RazorTargetAssemblyInfo.cache
+/Users/justinwyatt/Github/realtime-app/obj/Debug/netcoreapp2.2/realtime-app.dll
+/Users/justinwyatt/Github/realtime-app/obj/Debug/netcoreapp2.2/realtime-app.pdb
