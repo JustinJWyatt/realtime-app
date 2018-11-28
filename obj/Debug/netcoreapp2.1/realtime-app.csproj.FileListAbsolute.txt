@@ -1,0 +1,14 @@
+C:\Users\Justin\Documents\GitHub\realtime-app\bin\Debug\netcoreapp2.1\realtime-app.deps.json
+C:\Users\Justin\Documents\GitHub\realtime-app\bin\Debug\netcoreapp2.1\realtime-app.runtimeconfig.json
+C:\Users\Justin\Documents\GitHub\realtime-app\bin\Debug\netcoreapp2.1\realtime-app.runtimeconfig.dev.json
+C:\Users\Justin\Documents\GitHub\realtime-app\bin\Debug\netcoreapp2.1\realtime-app.dll
+C:\Users\Justin\Documents\GitHub\realtime-app\bin\Debug\netcoreapp2.1\realtime-app.pdb
+C:\Users\Justin\Documents\GitHub\realtime-app\obj\Debug\netcoreapp2.1\realtime-app.csprojAssemblyReference.cache
+C:\Users\Justin\Documents\GitHub\realtime-app\obj\Debug\netcoreapp2.1\realtime-app.csproj.CoreCompileInputs.cache
+C:\Users\Justin\Documents\GitHub\realtime-app\obj\Debug\netcoreapp2.1\realtime-app.RazorAssemblyInfo.cache
+C:\Users\Justin\Documents\GitHub\realtime-app\obj\Debug\netcoreapp2.1\realtime-app.RazorAssemblyInfo.cs
+C:\Users\Justin\Documents\GitHub\realtime-app\obj\Debug\netcoreapp2.1\realtime-app.AssemblyInfoInputs.cache
+C:\Users\Justin\Documents\GitHub\realtime-app\obj\Debug\netcoreapp2.1\realtime-app.AssemblyInfo.cs
+C:\Users\Justin\Documents\GitHub\realtime-app\obj\Debug\netcoreapp2.1\realtime-app.RazorTargetAssemblyInfo.cache
+C:\Users\Justin\Documents\GitHub\realtime-app\obj\Debug\netcoreapp2.1\realtime-app.dll
+C:\Users\Justin\Documents\GitHub\realtime-app\obj\Debug\netcoreapp2.1\realtime-app.pdb

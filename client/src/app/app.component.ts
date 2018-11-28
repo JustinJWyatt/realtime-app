@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import * as signalR from "@aspnet/signalr";
-import { HubConnection } from '@aspnet/signalr/dist/esm/HubConnection';
 
 
 @Component({
@@ -9,23 +8,17 @@ import { HubConnection } from '@aspnet/signalr/dist/esm/HubConnection';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-
   title = 'client';
 
-  public connection: HubConnection;
+  private connection: signalR.HubConnection;
 
-  ngOnInit() {
-    this.connection = new signalR.HubConnectionBuilder().withUrl("http://localhost:5000/hub").build();
+  ngOnInit(){
+    this.connection = new signalR.HubConnectionBuilder()
+    .withUrl("http://localhost:5000/chatHub")
+    .build();
 
-    this.connection.on("messageReceived", (username: string, message: string) => {
-      console.log(username);
-      console.log(message);
-    });
+    this.connection.start().then(() => console.log('started signalr connection')).catch(err => console.log(err));
 
-    this.connection.start().then(() => console.log('connected')).catch(err => console.log(err));
-  }
 
-  sendMessageToChat(){
-    this.connection.send("newMessage", "Justin Wyatt", "This is my initial message");
   }
 }

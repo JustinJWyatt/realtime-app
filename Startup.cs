@@ -16,13 +16,7 @@ namespace realtime_app
         // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddCors(o => o.AddPolicy("CorsPolicy", builder =>
-            {
-                builder
-                .AllowAnyMethod()
-                .AllowAnyHeader()
-                .WithOrigin("http://localhost:4200");
-            }));
+            services.AddCors();
 
             services.AddSignalR();
         }
@@ -30,25 +24,29 @@ namespace realtime_app
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
         {
-            app.UseDefaultFiles();
-            app.UseStaticFiles();
-
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
             }
 
-            app.UseCors("CorsPolicy");
+            app.UseCors(builder =>
+                                    builder.AllowAnyOrigin()
+            .AllowAnyMethod()
+            .AllowAnyHeader()
+            .AllowCredentials());
 
-            app.UseSignalR(options =>
+            app.UseSignalR(routes =>
             {
-                options.MapHub<ChatHub>("/hub");
+                routes.MapHub<ChatHub>("/chatHub");
             });
 
-            app.Run(async (context) =>
-            {
-                await context.Response.WriteAsync("Hello World!");
-            });
+            app.UseDefaultFiles();
+            app.UseStaticFiles();
+
+            // app.Run(async (context) =>
+            // {
+            //     await context.Response.WriteAsync("Hello World!");
+            // });
         }
     }
 }
