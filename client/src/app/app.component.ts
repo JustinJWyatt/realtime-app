@@ -10,6 +10,7 @@ import * as signalR from "@aspnet/signalr";
 export class AppComponent {
   
   public incomingMessages: string[] = [];
+  public chatMessage: string = '';
   private connection: signalR.HubConnection;
 
   ngOnInit(){
@@ -26,8 +27,13 @@ export class AppComponent {
     });
   }
 
-  sendChatMessage(chatMessage: string): void {
-    this.connection.invoke('SendMessage', chatMessage)
+  onKeyUp(event: any){
+    this.chatMessage = event.target.value;
+  }
+
+  sendChatMessage(): void {
+    this.connection.invoke('SendMessage', this.chatMessage)
+                   .then(() => { this.chatMessage = ''})
                    .catch(err => console.log(err));
   }
 
