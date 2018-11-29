@@ -8,8 +8,8 @@ import * as signalR from "@aspnet/signalr";
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'client';
-
+  
+  public incomingMessages: string[] = [];
   private connection: signalR.HubConnection;
 
   ngOnInit(){
@@ -17,8 +17,19 @@ export class AppComponent {
     .withUrl("http://localhost:5000/chatHub")
     .build();
 
-    this.connection.start().then(() => console.log('started signalr connection')).catch(err => console.log(err));
+    this.connection.start()
+                   .then(() => console.log('started signalr connection'))
+                   .catch(err => console.log(err));
 
-
+    this.connection.on("ReceiveMessage", (message: string) => {
+        this.incomingMessages.push(message);
+        console.log(message);
+    });
   }
+
+  sendChatMessage(chatMessage: string): void {
+    this.connection.invoke('SendMessage', chatMessage)
+                   .catch(err => console.log(err));
+  }
+
 }

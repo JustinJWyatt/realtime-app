@@ -11800,11 +11800,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Justin\\Documents\\GitHub\\realtime-app\\realtime-app.csproj",
+      "projectUniqueName": "c:\\Users\\Justin\\Documents\\GitHub\\realtime-app-repo\\realtime-app.csproj",
       "projectName": "realtime-app",
-      "projectPath": "C:\\Users\\Justin\\Documents\\GitHub\\realtime-app\\realtime-app.csproj",
+      "projectPath": "c:\\Users\\Justin\\Documents\\GitHub\\realtime-app-repo\\realtime-app.csproj",
       "packagesPath": "C:\\Users\\Justin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Justin\\Documents\\GitHub\\realtime-app\\obj\\",
+      "outputPath": "c:\\Users\\Justin\\Documents\\GitHub\\realtime-app-repo\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
