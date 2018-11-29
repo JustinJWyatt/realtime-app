@@ -23,7 +23,6 @@ export class AppComponent {
 
     this.connection.on("ReceiveMessage", (message: string) => {
         this.incomingMessages.push(message);
-        console.log(message);
     });
   }
 
