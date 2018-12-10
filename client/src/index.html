@@ -24,11 +24,29 @@
       color: white;
     }
 
+    .main-nav {
+      list-style: none;
+    }
+
+    .nav-link {
+      float: left;
+    }
+
+    .header {
+      margin: 0 auto;
+      width: 50%;
+    }
+
+    .header h1 {
+      text-align: center;
+    }
+
     .container {
       margin: 0 auto;
       width: 750px;
       background: #444753;
       border-radius: 5px;
+      height: 500px;
     }
 
     .people-list {
@@ -56,8 +74,8 @@
     }
 
     .people-list ul {
-      padding: 20px;
-      height: 770px;
+      height: 400px;
+      overflow: auto;
     }
 
     .people-list ul li {
@@ -89,6 +107,7 @@
       border-top-right-radius: 5px;
       border-bottom-right-radius: 5px;
       color: #434651;
+      height: 500px;
     }
 
     .chat .chat-header {
@@ -125,8 +144,8 @@
     .chat .chat-history {
       padding: 30px 30px 20px;
       border-bottom: 2px solid white;
-      overflow-y: scroll;
-      height: 575px;
+      overflow-y: auto;
+      height: 245px;
     }
 
     .chat .chat-history .message-data {
@@ -138,7 +157,7 @@
       padding-left: 6px;
     }
 
-    .chat-history ul li{
+    .chat-history ul li {
       list-style: none;
     }
 
